@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KESSLER DEFENSE SERVICES</title>
+  <link rel="stylesheet" href="stylehack.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">
+      <h1>KESSLER DEFENSE SERVICES</h1>
+    </div>
+    <div class="command-line">
+      <p class="welcome-text">Welcome to the Kessler Security System Interface</p>
+      <button class="identification-btn" id="identification-btn" onclick="showFirstPopup()">IDENTIFICATION</button>
+    </div>
+
+    <!-- First Popup (Code scrolling) -->
+    <div id="popup-1" class="popup">
+      <div class="popup-content">
+        <div id="scrolling-code" class="scrolling-code"></div>
+      </div>
+    </div>
+
+    <!-- Second Popup (Security Pattern Lock) -->
+    <div id="popup-2" class="popup">
+      <div class="popup-content">
+        <div class="pattern-grid">
+          <!-- Grid Nodes -->
+          <div class="node" id="node-1" onclick="selectNode(1)"></div>
+          <div class="node" id="node-2" onclick="selectNode(2)"></div>
+          <div class="node" id="node-3" onclick="selectNode(3)"></div>
+          <div class="node" id="node-4" onclick="selectNode(4)"></div>
+          <div class="node" id="node-5" onclick="selectNode(5)"></div>
+          <div class="node" id="node-6" onclick="selectNode(6)"></div>
+          <div class="node" id="node-7" onclick="selectNode(7)"></div>
+          <div class="node" id="node-8" onclick="selectNode(8)"></div>
+          <div class="node" id="node-9" onclick="selectNode(9)"></div>
+        </div>
+        <button id="validate-btn" onclick="validatePattern()">VALIDATE</button>
+      </div>
+    </div>
+
+    <!-- Error Popup -->
+    <div id="error-popup" class="popup">
+      <div class="popup-content">
+        <p class="error-text">Contingency Measure Activated. Please Wait...</p>
+        <div id="countdown"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripthack.js"></script>
+</body>
+</html>
