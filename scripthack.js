@@ -64,7 +64,7 @@ function validatePattern() {
       showSecondPopup(); 
     } else {
       alert("All patterns accepted! Access Granted.");
-      window.location.href = "main.html"; 
+      window.location.href = "maintermi.html"; 
     }
   } else if (patternChocolat.some(pattern => pattern.every(node => selectedNodes.includes(node)))) {
     chocolat.play();
